@@ -1,12 +1,12 @@
-# Install Scaffolder with uv
+# Create Scaffolder with uv
 
 *uv venv*  
 *source .venv/scripts/activate*  
-*uv add django*  
-*uv sync*  
+
 
 # Install Django
-
+*uv add django*  
+*uv sync*  
 *django-admin startproject mysite .*  
 *cd mysite/*  
 *python manage.py runserver*  
