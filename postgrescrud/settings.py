@@ -77,15 +77,15 @@ WSGI_APPLICATION = 'postgrescrud.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        # El mismo valor que POSTGRES_DB
+        #POSTGRES_DB: Nombre de la Base de Datos
         'NAME': 'tasksdb',
-        # El mismo valor que POSTGRES_USER
+        #POSTGRES_USER: Nombre del Usuario
         'USER': 'postgres',
-        # El mismo valor que POSTGRES_PASSWORD
+        #POSTGRES_PASSWORD: Password de Postgres
         'PASSWORD': '12345',
-        # O '127.0.0.1'
+        #HOST: '127.0.0.1 o localhost para BD Locales'
         'HOST': 'localhost',
-        # El puerto que mapeaste             
+        # PORT: Puerto (5432 si es local)
         'PORT': '5432',
     }
 }
