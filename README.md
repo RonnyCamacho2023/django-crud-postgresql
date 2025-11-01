@@ -9,3 +9,6 @@
 *uv sync*  
 *django-admin startproject .*  
 *python manage.py runserver*  
+
+# Create App Task
+*python manage.py startapp tasks*  
