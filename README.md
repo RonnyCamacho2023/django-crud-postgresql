@@ -7,6 +7,5 @@
 # Install Django
 *uv add django*  
 *uv sync*  
-*django-admin startproject mysite .*  
-*cd mysite/*  
+*django-admin startproject .*  
 *python manage.py runserver*  
