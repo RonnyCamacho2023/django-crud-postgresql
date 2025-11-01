@@ -31,12 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'tasks',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [
@@ -74,8 +76,17 @@ WSGI_APPLICATION = 'postgrescrud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        # El mismo valor que POSTGRES_DB
+        'NAME': 'tasksdb',
+        # El mismo valor que POSTGRES_USER
+        'USER': 'postgres',
+        # El mismo valor que POSTGRES_PASSWORD
+        'PASSWORD': '12345',
+        # O '127.0.0.1'
+        'HOST': 'localhost',
+        # El puerto que mapeaste             
+        'PORT': '5432',
     }
 }
 
